@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Release to S3
-      run: bash scripts/pipeline/release.sh ${{secrets.BUCKET_NAME}} "ADS" ${{secrets.AWS_ACCESS_KEY}} ${{secrets.AWS_SECRET_KEY}} "test.txt"
+      run: bash scripts/pipeline/release.sh ${{secrets.BUCKET_NAME}} "ADS/templates.zip" ${{secrets.AWS_ACCESS_KEY}} ${{secrets.AWS_SECRET_KEY}} "test.txt"
